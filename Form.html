@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="FormDesign.css" />
+        <script type="text/javascript" src="FormValidation.js"></script>
+        <title>JavaScript Form Validation</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Test JavaScript Form Validation</h1>
+        </header>
+
+        <div class="form">
+            <form name="userform" id="userform" action="userdetails.php" onsubmit="return validateForm()" method="post">
+            <table cellpadding="5" align="center" cellspacing="5" width="80%">
+
+                <tr>
+                    <td class="required" width="30%"><label for="name" class="form-label">Name</label></td>
+                    <td width="30%"><input type="text" name="uname"/></td>
+                    <td width="30%" class="error"><span id="nameerror"></span></td>
+                </tr>
+
+                <tr>
+                    <td class=""><label for="address" class="form-label">Address</label></td>
+                    <td><input type="text" name="address"/></td>
+                    <td class="error"><span id="adrserror"></span></td>
+                </tr>
+
+                <tr>
+                    <td class="required"><label for="zipcode" class="form-label">Zip Code</label></td>
+                    <td><input type="text" name="zipcode"/></td>
+                    <td class="error"><span id="ziperror"></span></td>
+                </tr>                              
+
+                <tr>
+                    <td class="required"><label for="country" class="form-label">Country</label></td>
+                    <td><select id="country" name="country">
+                            <option value="nocountry">Select Country</option>
+                            <option value="india">India</option>
+                            <option value="japan">Japan</option>
+                            <option value="us">United States</option>
+                        </select></td>
+                    <td class="error"><span id="countryerror"></span></td>
+                </tr>
+
+                <tr>
+                    <td class="required"><label for="gender" class="form-label">Gender</label></td>
+                    <td><input type="radio" value="male" name="gender" />Male
+                        <input type="radio" value="female" name="gender" />Female</td>
+                    <td class="error"><span id="generror"></span></td>
+                </tr>
+
+                <tr>
+                    <td class="required"><label for="preference" class="form-label">Preference</label></td>
+                    <td><input type="checkbox" value="red" name="color" />Red
+                        <input type="checkbox" value="green" name="color" />Green
+                        <input type="checkbox" value="blue" name="color" />Blue
+                    </td>
+                    <td class="error"><span id="preferror"></span></td>
+                </tr>
+
+                <tr>
+                    <td class="required"><label for="phone" class="form-label">Phone</label></td>
+                    <td><input type="text" name="phone"/></td>
+                    <td class="error"><span id="phoneerror"></span></td>
+                </tr>
+
+                <tr>
+                    <td class="required"><label for="email" class="form-label">Email</label></td>
+                    <td><input type="text" name="email"/></td>
+                    <td class="error"><span id="emailerror"></span></td>
+                </tr>
+
+                <tr>
+                    <td class="required"><label for="password" class="form-label">Password</label></td>
+                    <td><input type="password" name="password"/></td>
+                    <td class="error"><span id="passerror"></span></td>
+                </tr>
+
+                <tr>
+                    <td class="required"><label for="repassword" class="form-label">Verify Password(6-8 characters)</label></td>
+                    <td><input type="password" name="repassword"/>
+                    <td class="error"><span id="repasserror"></span></td>
+                </tr>                                
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="sub" value="SEND" />
+                        <input type="reset" value="CLEAR" />
+                    </td>
+                    <td></td>
+                </tr>
+
+            </table>
+            </form>
+        </div>
+
+    </body>
+</html>
+ <! (Shubham Pandey) (ID-2021HT66519) ––>
